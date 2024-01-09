@@ -41,7 +41,7 @@ brew update
 If an upgrade is available, then you can install it. 
 
 ```
-brew upgrade ibm-messging/ibmmq/devtoolkit
+brew upgrade ibm-messaging/ibmmq/devtoolkit
 ```
 
 
