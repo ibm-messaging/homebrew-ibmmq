@@ -15,13 +15,13 @@ limitations under the License.
 =end
 
 
-cask "devtoolkit" do
+cask "mqdevtoolkit" do
   version "9.3.4.0"
   sha256 "4b928d2ead4973273f0f8e8049a03926cd505373a2fca8830f395d7e8a752bb4"
 
   url "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/mactoolkit/#{version}-IBM-MQ-DevToolkit-MacOS.pkg",
      verified: "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/"
-  name "mq-dev-toolkit"
+  name "mqdevtoolkit"
   desc "IBM MQ Advanced Toolkit for MacOS"
   homepage "https://github.ibm.com/ibm-messaging/homebrew-ibmmq"
 
@@ -44,7 +44,7 @@ cask "devtoolkit" do
       puts underline(bold("PLEASE READ"))
       puts "Full usage license information can be found in the directory #{licenseLocation}"
       puts "If you don't accept these license terms please unistall by running"
-      puts italic("brew uninstall ibm-messaging/ibmmq/devtoolkit")
+      puts italic("brew uninstall ibm-messaging/ibmmq/mqdevtoolkit")
       puts 
     end
 
