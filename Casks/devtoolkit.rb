@@ -21,7 +21,7 @@ cask "devtoolkit" do
 
   url "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/mactoolkit/#{version}-IBM-MQ-DevToolkit-MacOS.pkg",
      verified: "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/"
-  name "devtoolkit"
+  name "mq-dev-toolkit"
   desc "IBM MQ Advanced Toolkit for MacOS"
   homepage "https://github.ibm.com/ibm-messaging/homebrew-ibmmq"
 
