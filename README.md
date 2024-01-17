@@ -52,6 +52,8 @@ The eagle eyed of you will notice that there is a second cask `devtoolkit`. We c
 brew uninstall ibm-messaging/ibmmq/devtoolkit
 ```
 
+We will remove the old cask in a later release to allow you to migrate to the new cask.
+
 ## Delete Tap
 To unregister this repository as a tap, run the command
 
