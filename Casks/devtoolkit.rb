@@ -57,12 +57,12 @@ cask "devtoolkit" do
       puts italic("export DYLD_LIBRARY_PATH=/opt/mqm/lib64")
       puts
       puts bold("Updated toolit")
-      puts "There is a newer version of the toolkit available,"
-      puts "as the cask"
+      puts "There is a newer version of the toolkit available, as the cask"
       puts italic("mqdevtoolkit")
       puts
       puts "To install the latest toolkit remove this cask"
       puts italic("brew uninstall ibm-messaging/ibmmq/devtoolkit")
+      puts
       puts "then install the updated cask"
       puts italic("brew uninstall ibm-messaging/ibmmq/mqdevtoolkit")
       puts
