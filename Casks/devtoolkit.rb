@@ -56,7 +56,7 @@ cask "devtoolkit" do
       puts "Set the DYLD_LIBRARY_PATH by entering the following on the command line:" 
       puts italic("export DYLD_LIBRARY_PATH=/opt/mqm/lib64")
       puts
-      puts bold("Updated toolit")
+      puts bold("Updated toolkit")
       puts "There is a newer version of the toolkit available, as the cask"
       puts italic("mqdevtoolkit")
       puts
