@@ -4,7 +4,7 @@ The cask is a simple wrapper for the publically delivered toolkit `.pkg` file.
 
 
 ## Version
-The cask installs the publically available version of the toolkit `9.3.4.0`
+The cask installs the publically available version of the toolkit `9.3.5.0`
 
 ## Create Tap
 To register this repository as a tap, run the command
