@@ -25,6 +25,24 @@ brew install ibm-messaging/ibmmq/mqdevtoolkit
 
 If you do not accept these license terms then do not install. If you do not accept these license terms but have already installed, then uninstall the cask by following the uninstall instructions.   
 
+## Post install - setting up your environment
+
+To make it easier to use the devtoolkit, you might want to:
+
+add the `/opt/mqm/bin` directory to your `PATH` environment variable e.g.,:
+
+```
+export PATH=/opt/mqm/bin:"$PATH"
+```
+
+add locations of the bin directories `/opt/mqm/bin` and `/opt/mqm/samp/bin` to the PATH by editing `/etc/paths`
+
+set the `DYLD_LIBRARY_PATH` e.g.,:
+
+```
+export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/opt/mqm/lib64
+```
+
 ## How do I uninstall the cask?
 
 ```
