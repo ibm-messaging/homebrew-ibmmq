@@ -32,7 +32,7 @@ To make it easier to use the devtoolkit, you might want to:
 add the `/opt/mqm/bin` directory to your `PATH` environment variable e.g.,:
 
 ```
-export PATH=/opt/mqm/bin:"$PATH"
+export PATH=/opt/mqm/bin:$PATH
 ```
 
 add locations of the bin directories `/opt/mqm/bin` and `/opt/mqm/samp/bin` to the PATH by editing `/etc/paths`
