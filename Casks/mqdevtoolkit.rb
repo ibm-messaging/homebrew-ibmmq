@@ -1,5 +1,5 @@
 =begin
-Copyright 2024 IBM Corp.
+Copyright 2024, 2025 IBM Corp.
 
 Licensed under the Apache License, Version 2.0 (the 'License');
 you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@ limitations under the License.
 
 
 cask "mqdevtoolkit" do
-  version "9.4.1.0"
-  sha256 "f806abff09a4b43fd8f84de6eaf105c0a1fdf6460b7f394b22701cae5fc3df16"
+  version "9.4.2.0"
+  sha256 "7f2f6e5a96f91cba600ed084b1b2ef9a128620fc6f9483185d62268aa80aa618"
 
   url "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/mactoolkit/#{version}-IBM-MQ-DevToolkit-MacOS.pkg",
      verified: "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/"
