@@ -142,7 +142,9 @@ cask "mqdevtoolkit" do
     def checkOSArch
       puts
       puts "Checking machine architecture"
-      if "arm64" != `uname -m`
+      osArch = `uname -m`
+      puts osArch
+      if "arm64" != osArch
         puts bold("NOTE: Support for x86_64 MacOS will be dropped in the next release.")
       else
         puts "arm64 detected"
