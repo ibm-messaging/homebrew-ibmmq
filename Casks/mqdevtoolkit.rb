@@ -142,10 +142,8 @@ cask "mqdevtoolkit" do
     def checkOSArch
       if "arm64" != `uname -m`.strip
         puts
-        puts bold("NOTE: The next release of #{desc} will not include x86_64 binaries.")
+        puts bold("NOTE: The next release of this toolkit will not include x86_64 binaries.")
         puts  
-      else
-          puts bold("NOTE: The next release of #{desc} will be ok for you")   
       end
     end  
 
