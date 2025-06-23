@@ -66,7 +66,7 @@ brew upgrade ibm-messaging/ibmmq/mqdevtoolkit
 ## Where's the other cask?
 We've deleted the `devtoolkit` cask. We changed the name to `mqdevtoolkit` a few releases ago, and as warned we have removed it. 
 
-# What's this Note:
+## What's this Note:
 If you are on a x86_64 MacOS then you will see the following warning on 
 install.
 
