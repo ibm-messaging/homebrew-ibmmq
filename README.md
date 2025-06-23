@@ -4,7 +4,7 @@ The cask is a simple wrapper for the publically delivered toolkit `.pkg` file.
 
 
 ## Version
-The cask installs the publically available version of the toolkit `9.4.2.0`
+The cask installs the publically available version of the toolkit `9.4.3.0`
 
 ## Create Tap
 To register this repository as a tap, run the command
@@ -63,14 +63,19 @@ If an upgrade is available, then you can install it.
 brew upgrade ibm-messaging/ibmmq/mqdevtoolkit
 ```
 
-## What's the other cask?
-The eagle eyed of you will notice that there is a second cask `devtoolkit`. We changed the name to `mqdevtoolkit` to make it stand out when you run the command `brew list`. If you have the cask with the old name installed, remove it by running the command
+## Where's the other cask?
+We've deleted the `devtoolkit` cask. We changed the name to `mqdevtoolkit` a few releases ago, and has warned we have removed it. 
+
+# What's this Note:
+If you are on a x86_64 MacOS then you will see the following warning on 
+install.
 
 ```
-brew uninstall ibm-messaging/ibmmq/devtoolkit
+NOTE: The next release of this toolkit will not include x86_64 binaries.
 ```
 
-We will remove the old cask in a later release to allow you to migrate to the new cask.
+The current toolkit is a universal binary built for both ARM64 and x86_64 MacOS architectures. The next release will be ARM64 only.
+
 
 ## Delete Tap
 To unregister this repository as a tap, run the command
