@@ -16,8 +16,8 @@ limitations under the License.
 
 
 cask "mqdevtoolkit" do
-  version "9.4.2.0"
-  sha256 "7f2f6e5a96f91cba600ed084b1b2ef9a128620fc6f9483185d62268aa80aa618"
+  version "9.4.3.0"
+  sha256 "657db145757f5c6fe915353c98b465211b33534f5e58ec7763628b54b5478098"
 
   url "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/mactoolkit/#{version}-IBM-MQ-DevToolkit-MacOS.pkg",
      verified: "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/"
@@ -139,11 +139,20 @@ cask "mqdevtoolkit" do
       puts " "
     end
 
+    def checkOSArch
+      if "arm64" != `uname -m`.strip
+        puts
+        puts bold("NOTE: The next release of this toolkit will not include x86_64 binaries.")
+        puts  
+      end
+    end  
+
     licenseLocation = "/opt/mqm/licenses/"
 
     show_license(licenseLocation)
     showUsage(licenseLocation)
     showPostSteps
+    checkOSArch
   end
 
 end
