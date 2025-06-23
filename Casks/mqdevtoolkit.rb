@@ -147,7 +147,6 @@ cask "mqdevtoolkit" do
       else
         puts "arm64 detected"
       end
-      puts osArch
       puts 
 
     end  
