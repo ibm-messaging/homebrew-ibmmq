@@ -142,7 +142,7 @@ cask "mqdevtoolkit" do
     def checkOSArch
       puts
       puts "Checking machine architecture"
-      osArch = `uname -m`
+      osArch = `uname -m`.strip
       puts osArch
       puts "Data type of 'osArch': #{osArch.class} of length #{osArch.length}" 
       if "arm64" != osArch
