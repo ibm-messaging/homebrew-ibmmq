@@ -139,11 +139,21 @@ cask "mqdevtoolkit" do
       puts " "
     end
 
+    def checkOSArch
+      puts
+      puts "Checking machine architecture"
+      osArch = `uname -m`
+      puts osArch
+      puts 
+
+    end  
+
     licenseLocation = "/opt/mqm/licenses/"
 
     show_license(licenseLocation)
     showUsage(licenseLocation)
     showPostSteps
+    checkOSArch
   end
 
 end
