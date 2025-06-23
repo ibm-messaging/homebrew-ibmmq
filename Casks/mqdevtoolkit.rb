@@ -140,18 +140,13 @@ cask "mqdevtoolkit" do
     end
 
     def checkOSArch
-      puts
-      puts "Checking machine architecture"
-      # osArch = `uname -m`.strip
-      # puts osArch
-      # puts "Data type of 'osArch': #{osArch.class} of length #{osArch.length}" 
       if "arm64" != `uname -m`.strip
-        puts bold("NOTE: Support for x86_64 MacOS will be dropped in the next release.")
+        puts
+        puts bold("NOTE: The next release of #{desc} will not include x86_64 binaries.")
+        puts  
       else
-        puts "arm64 detected"
+          puts bold("NOTE: The next release of #{desc} will be ok for you")   
       end
-      puts 
-
     end  
 
     licenseLocation = "/opt/mqm/licenses/"
