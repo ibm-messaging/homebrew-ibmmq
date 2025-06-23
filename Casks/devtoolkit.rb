@@ -1,5 +1,5 @@
 =begin
-Copyright 2024, 2025 IBM Corp.
+Copyright 2024 IBM Corp.
 
 Licensed under the Apache License, Version 2.0 (the 'License');
 you may not use this file except in compliance with the License.
@@ -15,13 +15,13 @@ limitations under the License.
 =end
 
 
-cask "mqdevtoolkit" do
-  version "9.4.2.0"
-  sha256 "7f2f6e5a96f91cba600ed084b1b2ef9a128620fc6f9483185d62268aa80aa618"
+cask "devtoolkit" do
+  version "9.3.4.0"
+  sha256 "4b928d2ead4973273f0f8e8049a03926cd505373a2fca8830f395d7e8a752bb4"
 
   url "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/mactoolkit/#{version}-IBM-MQ-DevToolkit-MacOS.pkg",
      verified: "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/"
-  name "mqdevtoolkit"
+  name "devtoolkit"
   desc "IBM MQ Advanced Toolkit for MacOS"
   homepage "https://github.ibm.com/ibm-messaging/homebrew-ibmmq"
 
@@ -44,7 +44,7 @@ cask "mqdevtoolkit" do
       puts underline(bold("PLEASE READ"))
       puts "Full usage license information can be found in the directory #{licenseLocation}"
       puts "If you don't accept these license terms please unistall by running"
-      puts italic("brew uninstall ibm-messaging/ibmmq/mqdevtoolkit")
+      puts italic("brew uninstall ibm-messaging/ibmmq/devtoolkit")
       puts 
     end
 
@@ -55,6 +55,16 @@ cask "mqdevtoolkit" do
       puts "to the PATH by editing /etc/paths"
       puts "Set the DYLD_LIBRARY_PATH by entering the following on the command line:" 
       puts italic("export DYLD_LIBRARY_PATH=/opt/mqm/lib64")
+      puts
+      puts bold("Updated toolkit")
+      puts "There is a newer version of the toolkit available, as the cask"
+      puts italic("mqdevtoolkit")
+      puts
+      puts "To install the latest toolkit remove this cask"
+      puts italic("brew uninstall ibm-messaging/ibmmq/devtoolkit")
+      puts
+      puts "then install the updated cask"
+      puts italic("brew uninstall ibm-messaging/ibmmq/mqdevtoolkit")
       puts
     end
 
