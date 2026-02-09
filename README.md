@@ -1,10 +1,7 @@
-# IBM MQ Toolkit for MacOS (Brew installer)
-This repo provides the IBM MQ Toolkit for MacOS as a Brew cask.
-The cask is a simple wrapper for the publically delivered toolkit `.pkg` file.
-
-
-## Version
-The cask installs the publically available version of the toolkit `9.4.4.0`
+# IBM MQ Tap for MacOS (Brew installer)
+The repo provides 
+- the IBM MQ Toolkit for MacOS as a Brew cask
+- the MQ container inspector on MacOS as a Brew formula
 
 ## Create Tap
 To register this repository as a tap, run the command
@@ -13,7 +10,13 @@ To register this repository as a tap, run the command
 brew tap ibm-messaging/ibmmq
 ```
 
-## How do I install the cask?
+## IBM MQ Toolkit for MacOS
+The IBM MQ Toolkit for MacOS cask is a simple wrapper for the publically delivered toolkit `.pkg` file.
+
+### Version
+The cask installs the publically available version of the toolkit `9.4.5.0`
+
+### How do I install the cask?
 Installing this cask means **you have accepted the license** at:
 https://ibm.biz/mqdevmacclient
 
@@ -25,7 +28,7 @@ brew install ibm-messaging/ibmmq/mqdevtoolkit
 
 If you do not accept these license terms then do not install. If you do not accept these license terms but have already installed, then uninstall the cask by following the uninstall instructions.   
 
-## Post install - setting up your environment
+### Post install - setting up your environment
 
 To make it easier to use the devtoolkit, you might want to:
 
@@ -43,14 +46,14 @@ set the `DYLD_LIBRARY_PATH` e.g.,:
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/opt/mqm/lib64
 ```
 
-## How do I uninstall the cask?
+### How do I uninstall the cask?
 
 ```
 brew uninstall ibm-messaging/ibmmq/mqdevtoolkit
 ```
 
 
-## How do I find upgrade for the cask?
+### How do I find upgrade for the cask?
 Check for an update 
 
 ```
@@ -64,7 +67,7 @@ brew upgrade ibm-messaging/ibmmq/mqdevtoolkit
 ```
 
 
-## Where are the x86_64 binaries?:
+### Where are the x86_64 binaries?:
 If you are on a x86_64 MacOS then you will see the following warning on 
 install.
 
