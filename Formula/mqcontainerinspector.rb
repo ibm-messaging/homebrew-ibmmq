@@ -16,12 +16,12 @@ limitations under the License.
 
 class Mqcontainerinspector < Formula
 
-  desc "A collection of tools for interacting with IBM® MQ queue managers running in containers."
+  desc "A collection of tools for interacting with IBM® MQ queue managers and MQ-Agent's running in containers."
 
-  version "v1.0.0"
+  version "v1.1.0"
   homepage "https://github.com/ibm-messaging/homebrew-ibmmq.git"
   url "https://github.com/ibm-messaging/mq-container-inspector/archive/refs/tags/#{version}.tar.gz"
-  sha256 "7523c2e4053a2efa39fbd4bd2931bad9dc490cbff5d93f5524b667f64dcbbd65"
+  sha256 "1c22fb3e49cd512c2441e2c9810b8b65c00e74d70e3df458c076c3e3752ab8b2"
   license "Apache-2.0"
   head "https://github.com/ibm-messaging/mq-container-inspector.git", branch: "main"
 
