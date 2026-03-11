@@ -16,7 +16,7 @@ limitations under the License.
 
 class Mqcontainerinspector < Formula
 
-  desc "A collection of tools for interacting with IBM® MQ queue managers running in containers."
+  desc "A collection of tools for interacting with IBM® MQ queue managers and MQ-Agent's running in containers."
 
   version "v1.1.0"
   homepage "https://github.com/ibm-messaging/homebrew-ibmmq.git"
