@@ -143,9 +143,13 @@ cask "mqdevtoolkit" do
       if "arm64" != `uname -m`.strip
         puts
         puts bold("NOTE: This release contains only ARM64 binaries.")
-        puts  
+        puts
       end
-    end  
+    end
+
+    def createGskitSymlink
+      system "ln", "-s", "/opt/mqm/gskit9/lib64", "/opt/mqm/gskit9/lib"
+    end
 
     licenseLocation = "/opt/mqm/licenses/"
 
@@ -153,6 +157,15 @@ cask "mqdevtoolkit" do
     showUsage(licenseLocation)
     showPostSteps
     checkOSArch
+    createGskitSymlink
+  end
+
+  uninstall_preflight do
+    def removeGskitSymlink
+      system "unlink", "/opt/mqm/gskit9/lib" if File.symlink?("/opt/mqm/gskit9/lib")
+    end
+
+    removeGskitSymlink
   end
 
 end
