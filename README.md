@@ -79,6 +79,22 @@ The current toolkit is a binary built only for the ARM64 architecture.
 If you need to work with x86_64 MacOS then you will need to use the 9.4.3.0 binary.
 
 
+### GSkit Errors
+If you have already installed 9.4.5.0 of the toolkit, but see 
+this error, when running `runmqakm`
+
+```
+Library not loaded: @rpath/libgsk9km_64.dylib
+```
+
+then you need to need to uninstall the cask, then reinstall it. 
+
+```
+brew uninstall ibm-messaging/ibmmq/mqdevtoolkit
+brew update
+brew install ibm-messaging/ibmmq/mqdevtoolkit
+```
+
 ## Delete Tap
 To unregister this repository as a tap, run the command
 
