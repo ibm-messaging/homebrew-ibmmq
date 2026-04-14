@@ -148,7 +148,7 @@ cask "mqdevtoolkit" do
     end
 
     def createGskitSymlink
-      system "ln", "-s", "/opt/mqm/gskit9/lib64", "/opt/mqm/gskit9/lib"
+      system "sudo", "ln", "-s", "/opt/mqm/gskit9/lib64", "/opt/mqm/gskit9/lib"
     end
 
     licenseLocation = "/opt/mqm/licenses/"
@@ -162,7 +162,7 @@ cask "mqdevtoolkit" do
 
   uninstall_preflight do
     def removeGskitSymlink
-      system "unlink", "/opt/mqm/gskit9/lib" if File.symlink?("/opt/mqm/gskit9/lib")
+      system "sudo", "unlink", "/opt/mqm/gskit9/lib" if File.symlink?("/opt/mqm/gskit9/lib")
     end
 
     removeGskitSymlink
