@@ -72,7 +72,7 @@ After a `brew upgrade` you may see the following warning.
 ```
 Warning: Skipping ibm-messaging/ibmmq because it is not trusted. Run `brew trust ibm-messaging/ibmmq` to trust it.
 ```
-This is because non homebrew hosted taps are currently are now untrusted by default. Homebrew requires explicit trust for them.  
+This is because non homebrew hosted taps are now untrusted by default. Homebrew requires explicit trust for them.  
 
 To trust the tap run the command 
 
