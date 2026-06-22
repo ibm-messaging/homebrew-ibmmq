@@ -147,17 +147,12 @@ cask "mqdevtoolkit" do
       end
     end
 
-    def createGskitSymlink
-      system "sudo", "ln", "-s", "/opt/mqm/gskit9/lib64", "/opt/mqm/gskit9/lib"
-    end
-
     licenseLocation = "/opt/mqm/licenses/"
 
     show_license(licenseLocation)
     showUsage(licenseLocation)
     showPostSteps
     checkOSArch
-    createGskitSymlink
   end
 
   uninstall_preflight do
