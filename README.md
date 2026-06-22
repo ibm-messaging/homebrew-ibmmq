@@ -66,6 +66,20 @@ If an upgrade is available, then you can install it.
 brew upgrade ibm-messaging/ibmmq/mqdevtoolkit
 ```
 
+### Why the warning about untrusted taps
+After a `brew upgrade` you may see the following warning.
+
+```
+Warning: Skipping ibm-messaging/ibmmq because it is not trusted. Run `brew trust ibm-messaging/ibmmq` to trust it.
+```
+This is because non homebrew hosted taps are untrusted by default. Homebrew requires explicit trust for them.  
+
+To trust the tap run the command 
+
+```
+brew trust ibm-messaging/ibmmq
+```
+
 
 ### Where are the x86_64 binaries?:
 If you are on a x86_64 MacOS then you will see the following warning on 
