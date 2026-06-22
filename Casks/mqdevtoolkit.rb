@@ -16,8 +16,8 @@ limitations under the License.
 
 
 cask "mqdevtoolkit" do
-  version "9.4.5.0"
-  sha256 "1ebdb991ceeefa10ba17a86b8a339bf522655294410b1804ec555888b66df36c"
+  version "10.0.0.0"
+  sha256 "1e8e35dbb00f7ac61d7f7f76561de11d737b61d22627ea964ccf4195f3c7fa6a"
 
   url "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/mactoolkit/#{version}-IBM-MQ-DevToolkit-MacOS.pkg",
      verified: "https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqdev/"

@@ -14,7 +14,7 @@ brew tap ibm-messaging/ibmmq
 The IBM MQ Toolkit for MacOS cask is a simple wrapper for the publically delivered toolkit `.pkg` file.
 
 ### Version
-The cask installs the publically available version of the toolkit `9.4.5.0`
+The cask installs the publically available version of the toolkit `10.0.0.0`
 
 ### How do I install the cask?
 Installing this cask means **you have accepted the license** at:
