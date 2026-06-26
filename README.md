@@ -74,11 +74,12 @@ Warning: Skipping ibm-messaging/ibmmq because it is not trusted. Run `brew trust
 ```
 This is because non homebrew hosted taps are untrusted by default. Homebrew requires explicit trust for them.  
 
-To trust the tap run the command 
+To trust the cask run the command 
 
 ```
-brew trust ibm-messaging/ibmmq
+brew trust ibm-messaging/ibmmq/mqdevtoolkit
 ```
+
 
 
 ### Where are the x86_64 binaries?:
