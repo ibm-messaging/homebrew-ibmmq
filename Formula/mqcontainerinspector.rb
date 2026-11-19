@@ -18,10 +18,10 @@ class Mqcontainerinspector < Formula
 
   desc "A collection of tools for interacting with IBM® MQ queue managers and MQ-Agent's running in containers."
 
-  version "v1.4.0"
+  version "v1.5.0"
   homepage "https://github.com/ibm-messaging/homebrew-ibmmq.git"
   url "https://github.com/ibm-messaging/mq-container-inspector/archive/refs/tags/#{version}.tar.gz"
-  sha256 "58a82b6ca45244449bb71c2088497bad3527f7a8d109dc1d618a88c6313ec3c5"
+  sha256 "2cbfcbb5b8747b0ce36d0bce0b23ae41e04943153a6296619b619d232abd4c7e"
   license "Apache-2.0"
   head "https://github.com/ibm-messaging/mq-container-inspector.git", branch: "main"
 
